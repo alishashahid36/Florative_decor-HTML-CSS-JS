@@ -1,0 +1,388 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.navbar {
+    background-color: rgb(225, 109, 128);
+    border-radius: 5px;
+    
+}
+
+.navbar li {
+    float: left;
+    list-style: none;
+    margin: 25px 25px;
+}
+.navbar.expanded {
+    height: auto; /* Adjust height as needed */
+}
+
+.navbar {
+    transition: height 0.3s ease; /* Add transition effect */
+}
+
+.logo p {
+    font-family:cursive;
+    padding: 44px 25px;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 23px;
+    color: black;
+    float: left;
+    text-transform: uppercase;
+    margin-right: 20px;
+
+
+}
+
+.navbar ul {
+    overflow:auto;
+}
+
+.navbar li a {
+    padding: 21px 3px;
+    text-decoration: none;
+    color: black;
+    font-family: serif;
+    float: left;
+    font-size: 20px;
+}
+
+.navbar li a:hover {
+    color: white;
+}
+
+.navbar img {
+    width: 60px;
+    height: 60px;
+    padding-top: -10px;
+    margin-top: 10px;
+   margin-bottom: -35px;
+   margin-left:20px ;
+
+}
+
+.search {
+    float: right;
+    color: white;
+    padding: 22.5px 4px;
+}
+
+.navbar input {
+    border: 2px solid gray;
+    border-radius: 15px;
+    padding: 3px;
+}
+
+.home h1 {
+    justify-content: center;
+    font-size: 40px;
+    color: rgb(227, 39, 102);
+    padding-left: 90px;
+    padding-right: 90px;
+
+
+}
+
+.home span {
+    justify-content: center;
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+    padding-left: 100px;
+    padding-right: 100px;
+    font-style: italic;
+    margin-top: 100px;
+
+}
+
+.home p {
+    justify-content: center;
+    font-size: 30px;
+    color:black;
+    padding-left: 100px;
+    padding-right: 100px;
+    font-style: normal;
+    margin-top: 100px;
+
+}
+
+.home {
+    display: flexbox;
+    align-items: center;
+    min-height: 80vh;
+    background: url('Images/f2.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.Home img {
+    justify-content: space-between;
+    width: 360px;
+    height: 410px;
+    margin-left: 2.5rem;
+    margin-bottom:2rem;
+transition: all 0.5s ease;
+}
+.Home img:hover{
+opacity: 0.5;
+}
+
+.Home h2 {
+    font-size: 40px;
+    padding: 20px;
+    margin: 20px;
+}
+.Home h3 {
+    font-size: 40px;
+    padding: 20px;
+    margin: 20px;
+} 
+
+footer {
+    background-color: rgb(225, 109, 128);
+    color: white;
+    padding: 50px 0px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-left: 30px;
+}
+
+.footer-section {
+    flex: 1;
+    padding: 0px 20px;
+  
+}
+
+.footer-section h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+
+ 
+
+
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0px;
+   margin-left: 20px;
+   
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+ 
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    background-color: rgba(2, 2, 2, 0.5);
+}
+
+
+body {
+    font-family: serif;
+}
+
+.contact {
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url(Images/bg\ 1.jpg);
+    background-size: cover;
+}
+
+.contact .content {
+    max-width: 800px;
+    text-align: center;
+}
+
+.contact .content h1 {
+    font-size: 50px;
+    font-weight: 500;
+    color: white;
+}
+
+.contact .content p {
+    font-weight: 300;
+    color: black;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.column {
+    width: 100%; /* Initially full width */
+    max-width: 400px; /* Maximum width for better readability */
+    margin: 20px;
+}
+
+/* Contact info styles */
+.container .Contactinfo .box {
+    margin-bottom: 20px;
+}
+
+.container .Contactinfo .box .icon {
+    display: flex;
+    align-items: center;
+}
+
+.container .Contactinfo .box .icon i {
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+    margin-right: 20px;
+}
+
+.container .Contactinfo .box .text {
+    color: #fff;
+}
+
+.container .Contactinfo .box .text h2,
+.container .Contactinfo .box .text h3,
+.container .Contactinfo .box .text h4 {
+    font-weight: 500;
+    color: black;
+    margin: 5px 0;
+}
+
+/* Contact form styles */
+.contactform {
+    width: 100%;
+    height: 40%;
+    padding: 40px;
+    background: white;
+    margin-top: 20px;
+}
+
+.contactform h5 {
+    font-size: 30px;
+    color: rgb(194, 79, 117);
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.contactform .inputbox {
+    position:relative;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.contactform .inputbox input,
+.contactform .inputbox textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    margin: 10px 0px;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    background: transparent;
+    transition: border-color 0.3s;
+    transform: translateY(20px);
+}
+
+.contactform .inputbox input:focus,
+.contactform .inputbox textarea:focus {
+    border-color: white;
+}
+
+.contactform .inputbox span {
+    position: absolute;
+    left: 0;
+    padding: 10px;
+    font-size: 16px;
+    margin: 10px 0px;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.contactform .inputbox input:focus + span,
+.contactform .inputbox textarea:focus + span,
+.contactform .inputbox input:valid + span,
+.contactform .inputbox textarea:valid + span {
+    transform: translateY(-30px);
+    font-size: 14px;
+    color: black;
+}
+
+.contactform input[type="submit"] {
+    background: palevioletred;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-left: 12px;
+    transition: background 0.3s;
+    transform: translateX(-20px);
+}
+
+.contactform input[type="submit"]:hover {
+    background: black;
+}
+
+
+@media only screen and (min-width: 768px) {
+    .container {
+        justify-content: space-between; 
+    }
+
+    .column {
+        width: calc(50% - 40px); 
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .navbar.responsive {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+    }
+
+    .navbar.responsive ul {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .navbar.responsive li {
+        margin: 10px 0;
+    }
+
+    .navbar.responsive .logo {
+        margin-top: 20px;
+    }
+}
